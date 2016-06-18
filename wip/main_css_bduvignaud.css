@@ -1,0 +1,264 @@
+
+@font-face {
+  font-family: Exo;
+  src: url(res/Exo2-Regular.otf);
+}
+
+@font-face {
+  font-family: Exo-light;
+  src: url(res/Exo2-Light.otf);
+}
+
+body {
+  margin: 0;
+  margin-top: 1px;
+  padding: 0;
+  width: 100%;
+  color: #B0BEC5;
+  border-spacing: 10px;
+  font-family: 'LatoWebLight', Exo-light;
+}
+
+.container {
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2em
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.5em
+  }
+}
+
+
+.content {
+  line-height: normal;
+  text-align: center;
+  display: block;
+  overflow: auto;
+}
+
+.panel-content {
+  width:95%;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .panel-content {
+    width:80%;
+  }
+}
+
+
+.catgrp {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.cat {
+  display: inline-block;
+  font-size: 20px;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 9px;
+  cursor: pointer;
+  -webkit-transition:background 0.3s, border 0.3s;
+  -moz-transition:background 0.3s, border 0.3s;
+  -o-transition:background 0.3s, border 0.3s;
+  transition:background 0.3s, border 0.3s;
+  transition-timing-function: ease-in;
+}
+
+@media (min-width: 1024px) {
+  .cat {
+    font-size: 32px;
+  }
+}
+
+#btn_scroll {
+  padding-bottom: 40px;
+}
+
+.cat:hover {
+  border: 1px solid #597989;
+  color: #597989;
+  background-color: #FBFBFB;
+}
+
+.title {
+  font-size: 32px;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 72px;
+  }
+}
+
+img {
+  width:100px;
+}
+
+@media (min-width: 1024px) {
+  img{
+    width:200px;
+  }
+}
+
+img#scroll_logo {
+  width:35px;
+}
+
+@media (min-width: 1024px) {
+  img#scroll_logo {
+    width:75px;
+  }
+}
+
+
+img#me{
+  -webkit-filter: contrast(80%) brightness(110%);
+  margin-top: 7%;
+  border-radius: 50%;
+}
+
+
+img#tse{
+  float:left;
+}
+
+img#hlt{
+  float:left;
+  margin-right: 20px;
+  margin-top:20px;
+}
+
+img#ujm{
+  margin-left:20px;
+  margin-bottom:20px;
+  margin-top:20px;
+  float:right;
+}
+
+img#cardiff{
+  margin-left:20px;
+  margin-bottom:20px;
+  margin-top:20px;
+  float:right;
+}
+
+#btn-grp {
+  margin-top: 5%;
+}
+
+.ct_btn_grp{
+  padding-top: 20%;
+}
+
+.ct_btn{
+  height:100px;
+  width:100px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #B0BEC5;
+  margin:1%;
+  -webkit-transition:background 0.8s ease;
+  -moz-transition:background 0.8s ease;
+  -o-transition:background 0.8s ease;
+  transition:background 0.8s ease;
+}
+
+@media (min-width: 1024px) {
+  .ct_btn{
+    height:200px;
+    width:200px;
+  }
+}
+
+.ct_btn#tw:hover {
+  background-color: #1DA1F2;
+}
+
+.ct_btn#in:hover {
+  background-color: #007BB5;
+}
+
+.ct_btn#em:hover {
+  background-color: #D54B3D;
+}
+
+
+
+a.pf_link {
+position: relative;
+width: 200px;
+text-decoration: none !important;
+text-align: center;
+margin-top: 5%
+}
+
+a.pf_link#pf_1 {
+  float:left;
+}
+
+a.pf_link#pf_2 {
+  float:right;
+}
+
+a.pf_link img {
+  width:200px;
+  border-radius: 5px;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+}
+
+a.pf_link img:hover {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+
+a.pf_link:after {
+content: attr(title);
+position: absolute;
+left: 0;
+top: 30px;
+padding: 0.5em 0px;
+width: 200px;
+background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 50%,  rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+text-decoration: none !important;
+color: #fff;
+font-size: 24px;
+opacity: 0;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+}
+a.pf_link:hover:after, a.pf_link:focus:after {
+opacity: 1.0;
+}
+
+@media (min-width: 1024px) {
+  a.pf_link:after {
+    width: 400px;
+  }
+
+  a.pf_link img {
+    width:400px;
+  }
+
+  a.pf_link {
+    width: 400px;
+  }
+
+}

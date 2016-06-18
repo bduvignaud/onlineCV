@@ -1,0 +1,73 @@
+<html>
+<head>
+  <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="..\jquery\jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+  <style>
+    @font-face {
+      font-family: Exo-light;
+      src: url(res/Exo2-Light.otf);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      color: #B0BEC5;
+      display: table;
+      border-spacing: 10px;
+      font-weight: 100;
+      font-family: 'Lato', Exo-light;
+    }
+
+    .container {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .content {
+      text-align: center;
+      display: inline-block;
+    }
+
+    .text {
+      font-size: 72px;
+      margin-bottom: 40px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="text">Pile ou Face</div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  $('.text').click(function(){
+    $(this).animate({
+      opacity:0
+    },1000, function(){
+      res = computeHoT();
+      console.log(res);
+      $('.text').html(res);
+      $('.text').animate({
+        opacity:1
+      },'fast')
+    })
+  })
+
+  function computeHoT(){
+    res = Math.random();
+    return res<0.5 ? "Pile" : "Face";
+  }
+
+
+</script>
+
+
+</html>
